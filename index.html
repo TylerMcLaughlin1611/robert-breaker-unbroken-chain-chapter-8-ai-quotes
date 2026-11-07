@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 8, Quote by Quote</title>
+<meta name="description" content="A quote-by-quote fact check of Chapter 8 of Robert Breaker’s The Unbroken Chain of Salvation by Faith in The Blood.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f1e8; --paper-2:#ece6d8; --card:#fbf9f4;
+  --ink:#1b1815; --ink-2:#4a443c; --ink-3:#7a7266; --rule:#d8d0bf;
+  --blood:#8e1b1b; --blood-soft:#f1dcd6;
+  --likely:#b4532a; --likely-soft:#f4e1d3;
+  --verified:#2f5d46; --verified-soft:#dce8df;
+  --unknown:#8a7748; --unknown-soft:#efe6cf;
+  --pending:#5a6273; --pending-soft:#e3e5ea;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+  --measure:40rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15130f; --paper-2:#1d1a15; --card:#1f1c17;
+    --ink:#efe9dd; --ink-2:#c4bcad; --ink-3:#8f8778; --rule:#36312a;
+    --blood:#e0605a; --blood-soft:#3a1d1b;
+    --likely:#e58a5c; --likely-soft:#3a2519;
+    --verified:#7fbf9b; --verified-soft:#1d2e24;
+    --unknown:#cdb682; --unknown-soft:#2e2819;
+    --pending:#a3abbd; --pending-soft:#252832;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15130f; --paper-2:#1d1a15; --card:#1f1c17;
+  --ink:#efe9dd; --ink-2:#c4bcad; --ink-3:#8f8778; --rule:#36312a;
+  --blood:#e0605a; --blood-soft:#3a1d1b;
+  --likely:#e58a5c; --likely-soft:#3a2519;
+  --verified:#7fbf9b; --verified-soft:#1d2e24;
+  --unknown:#cdb682; --unknown-soft:#2e2819;
+  --pending:#a3abbd; --pending-soft:#252832;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:1.175rem;line-height:1.68;
+  font-optical-sizing:auto;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration-color:var(--blood);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blood)}
+::selection{background:var(--blood);color:var(--paper)}
+
+.progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:50}
+.progress span{display:block;height:100%;width:0;background:var(--blood);transition:width .08s linear}
+
+.mast{
+  display:flex;justify-content:flex-end;align-items:center;gap:1rem;
+  padding:1rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--rule);
+  font-family:var(--sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.theme-btn{font:inherit;letter-spacing:.1em;background:none;border:1px solid var(--rule);color:var(--ink-2);padding:.4rem .7rem;border-radius:999px;cursor:pointer}
+.theme-btn:hover{border-color:var(--ink-2);color:var(--ink)}
+
+.hero{padding:clamp(3rem,9vw,7.5rem) clamp(1rem,4vw,3rem) clamp(2.5rem,6vw,4.5rem);max-width:78rem;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:.82rem;color:var(--blood);letter-spacing:.06em;margin:0 0 1.5rem}
+h1{font-weight:400;font-size:clamp(2.5rem,7.2vw,6rem);line-height:.98;letter-spacing:-.025em;margin:0;max-width:15ch;font-variation-settings:"opsz" 72}
+h1 em{font-style:italic;color:var(--blood)}
+.dek{font-size:clamp(1.2rem,2.1vw,1.55rem);line-height:1.45;color:var(--ink-2);max-width:40rem;margin:2rem 0 0;font-weight:300}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin-top:2.75rem;padding-top:1.25rem;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.8rem;color:var(--ink-3)}
+.meta strong{display:block;font-weight:600;color:var(--ink);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.15rem}
+.meta a{color:var(--ink-2)}
+
+/* verdict band */
+.stats{background:var(--ink);color:var(--paper);padding:clamp(2.5rem,6vw,4.5rem) clamp(1rem,4vw,3rem)}
+:root[data-theme="dark"] .stats{background:var(--paper-2);color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stats{background:var(--paper-2);color:var(--ink)}}
+.stats-inner{max-width:78rem;margin:0 auto}
+.stat-label{font-family:var(--sans);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;opacity:.65;margin:0 0 1.5rem}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem 1.5rem;margin-bottom:2.25rem}
+@media (min-width:760px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(3rem,7vw,5rem);line-height:.9;letter-spacing:-.03em}
+.tile span{display:flex;align-items:center;gap:.5rem;margin-top:.6rem;font-family:var(--sans);font-size:.85rem;opacity:.85}
+.tile span::before{content:"";width:.7rem;height:.7rem;border-radius:1px;background:var(--c)}
+.bar{display:flex;height:14px;border-radius:2px;overflow:hidden;gap:2px}
+.bar i{display:block;height:100%}
+.c-fake{--c:#c8443c}.c-likely{--c:#d98a52}.c-un{--c:#b9a676}.c-pend{--c:#8f97a8}
+.bar i{background:var(--c)}
+.stats-note{font-family:var(--sans);font-size:.85rem;opacity:.7;margin:1.1rem 0 0;max-width:46rem;line-height:1.5}
+
+/* layout */
+.layout{max-width:78rem;margin:0 auto;padding:clamp(2.5rem,6vw,5rem) clamp(1rem,4vw,3rem) 4rem;display:grid;grid-template-columns:minmax(0,1fr);gap:3rem}
+@media (min-width:1080px){.layout{grid-template-columns:13rem minmax(0,1fr);gap:5rem}}
+.toc{display:none}
+@media (min-width:1080px){.toc{display:block;position:sticky;top:2rem;align-self:start;font-family:var(--sans);font-size:.82rem;max-height:calc(100vh - 4rem);overflow:auto}}
+.toc p{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0 0 1rem;font-weight:600}
+.toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule)}
+.toc a{display:block;padding:.4rem 0 .4rem 1rem;margin-left:-1px;border-left:2px solid transparent;color:var(--ink-3);text-decoration:none;line-height:1.35}
+.toc a small{display:block;font-family:var(--mono);font-size:.68rem;opacity:.8;margin-top:.1rem}
+.toc a:hover{color:var(--ink)}
+.toc a.active{color:var(--ink);border-left-color:var(--blood);font-weight:500}
+
+main article.body{min-width:0}
+.prose{max-width:var(--measure)}
+section{scroll-margin-top:1.5rem}
+section + section{margin-top:clamp(3.5rem,8vw,6rem)}
+.sec-num{font-family:var(--mono);font-size:.78rem;color:var(--blood);letter-spacing:.08em;display:block;margin-bottom:.6rem}
+h2{font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.08;letter-spacing:-.018em;margin:0 0 1.5rem;max-width:22ch}
+p{margin:0 0 1.15em}
+.lede::first-letter{float:left;font-size:4.6em;line-height:.82;padding:.08em .1em 0 0;color:var(--blood)}
+
+.key{display:grid;gap:1rem;margin:2rem 0 0;max-width:48rem}
+@media (min-width:640px){.key{grid-template-columns:repeat(2,1fr)}}
+.key div{border-top:2px solid var(--c);padding-top:.8rem}
+.key strong{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+.key p{font-size:.98rem;line-height:1.55;color:var(--ink-2);margin:0}
+
+/* filters */
+.filters{
+  position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;
+  padding:.9rem 0;margin:0 0 1rem;background:var(--paper);border-bottom:1px solid var(--rule)
+}
+.filters span{font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-right:.4rem}
+.chip{
+  font-family:var(--sans);font-size:.8rem;font-weight:500;padding:.38rem .8rem;border-radius:999px;cursor:pointer;
+  border:1px solid var(--rule);background:transparent;color:var(--ink-2);display:inline-flex;align-items:center;gap:.45rem
+}
+.chip::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--c,var(--ink-3))}
+.chip[data-f="all"]::before{display:none}
+.chip:hover{border-color:var(--ink-3);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.chip em{font-style:normal;font-family:var(--mono);font-size:.72rem;opacity:.7}
+.search{
+  flex:1 1 100%;display:flex;align-items:center;gap:.6rem;margin-bottom:.35rem;
+  padding:.55rem .95rem;border:1px solid var(--rule);border-radius:999px;background:var(--card);color:var(--ink-3)
+}
+.search:focus-within{border-color:var(--ink-2);color:var(--ink-2)}
+.search svg{flex:none}
+.search input{
+  flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);
+  font-family:var(--sans);font-size:.92rem;-webkit-appearance:none;appearance:none
+}
+.search input::placeholder{color:var(--ink-3)}
+.search input::-webkit-search-cancel-button{display:none}
+.search-clear{border:0;background:none;color:var(--ink-3);cursor:pointer;font-family:var(--sans);font-size:.75rem;padding:.1rem .2rem}
+.search-clear:hover{color:var(--blood)}
+.search-clear[hidden]{display:none}
+.result-count{margin-left:auto;font-family:var(--mono);font-size:.72rem;color:var(--ink-3)}
+.no-results{font-family:var(--sans);font-size:.95rem;color:var(--ink-3);padding:2.5rem 0;border-bottom:1px solid var(--rule)}
+.no-results[hidden]{display:none}
+
+/* eras */
+.era{display:flex;align-items:baseline;gap:1rem;margin:3.5rem 0 .5rem}
+.era:first-of-type{margin-top:1.5rem}
+.era h3{margin:0;font-weight:400;font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.01em}
+.era small{font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.era i{flex:1;height:1px;background:var(--rule)}
+
+/* quote cards */
+.q{display:grid;grid-template-columns:minmax(0,1fr);gap:0 2rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);scroll-margin-top:5rem;max-width:52rem}
+@media (min-width:720px){.q{grid-template-columns:4rem minmax(0,1fr)}}
+.q[hidden]{display:none}
+.q-num{font-family:var(--serif);font-weight:300;font-size:2.6rem;line-height:1;color:var(--ink-3);letter-spacing:-.03em}
+@media (max-width:719px){.q-num{font-size:1rem;font-family:var(--mono);margin-bottom:.4rem}}
+.q-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem;margin-bottom:1.1rem}
+.q-head h4{margin:0;font-family:var(--sans);font-size:1.3rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.q-head .when{font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.v{
+  margin-left:auto;font-family:var(--sans);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  padding:.28rem .55rem;border-radius:2px;white-space:nowrap
+}
+@media (max-width:560px){.v{margin-left:0;white-space:normal}}
+.v-fake{background:var(--blood-soft);color:var(--blood)}
+.v-likely{background:var(--likely-soft);color:var(--likely)}
+.v-un{background:var(--unknown-soft);color:var(--unknown)}
+.v-pend{background:var(--pending-soft);color:var(--pending)}
+
+.claimed{
+  margin:0;padding:1.1rem 1.25rem 1.2rem;background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--c);border-radius:3px;
+}
+.claimed .lbl,.actual .lbl{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:.55rem}
+.claimed .lbl{color:var(--c)}
+.claimed q{display:block;font-style:italic;font-size:1.08rem;line-height:1.55;quotes:"“" "”"}
+.claimed .cite{display:block;margin-top:.8rem;font-family:var(--sans);font-size:.8rem;color:var(--ink-3);line-height:1.45}
+.claimed .cite b{font-weight:600;color:var(--ink-2)}
+.q[data-v="fake"]{--c:var(--blood)}
+.q[data-v="likely"]{--c:var(--likely)}
+.q[data-v="un"]{--c:var(--unknown)}
+.q[data-v="pend"]{--c:var(--pending)}
+
+.finding{margin-top:1.25rem}
+.finding > .lbl{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin-bottom:.5rem}
+.finding p{font-size:1.06rem}
+.finding p:last-child{margin-bottom:0}
+.finding ol{padding-left:1.3rem;margin:.25rem 0 1rem}
+.finding li{margin-bottom:.5rem;font-size:1.06rem}
+.finding li::marker{font-family:var(--mono);font-size:.8rem;color:var(--blood)}
+
+.actual{margin:1.25rem 0 0;padding:1.1rem 1.25rem;border-radius:3px;background:var(--verified-soft)}
+.actual .lbl{color:var(--verified)}
+.actual blockquote{margin:0;font-size:1.02rem;line-height:1.6}
+.actual blockquote + blockquote{margin-top:.9rem}
+.actual cite{display:block;margin-top:.7rem;font-family:var(--sans);font-style:normal;font-size:.78rem;color:var(--ink-2)}
+
+details.latin{margin-top:1rem;border:1px solid var(--rule);border-radius:3px;background:var(--card)}
+details.latin summary{
+  cursor:pointer;list-style:none;padding:.8rem 1.1rem;font-family:var(--sans);font-size:.82rem;font-weight:500;color:var(--ink-2);
+  display:flex;justify-content:space-between;align-items:center
+}
+details.latin summary::-webkit-details-marker{display:none}
+details.latin summary::after{content:"+";font-family:var(--mono);font-size:1rem;color:var(--blood)}
+details.latin[open] summary::after{content:"−"}
+details.latin .inner{padding:0 1.1rem 1.1rem}
+details.latin .inner p{font-size:.98rem;line-height:1.6}
+details.latin .la{font-style:italic;color:var(--ink-2)}
+details.latin .tag{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-3);margin-bottom:.35rem}
+
+.aside{margin-top:1.1rem;padding:1rem 1.2rem;border:1px dashed var(--rule);border-radius:3px;font-size:.98rem;color:var(--ink-2)}
+.aside b{font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blood);display:block;margin-bottom:.35rem}
+
+.pattern{margin-top:3.5rem;padding:clamp(1.5rem,4vw,2.5rem);border:1px solid var(--ink);position:relative;max-width:var(--measure)}
+.pattern::before{
+  content:"ChatGPT pattern";position:absolute;top:-.7rem;left:1.25rem;background:var(--paper);padding:0 .6rem;
+  font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--blood)
+}
+.pattern p:last-child{margin-bottom:0}
+
+/* sources */
+.src-grid{display:grid;gap:2.5rem;margin-top:1rem}
+@media (min-width:900px){.src-grid{grid-template-columns:1fr 1fr;gap:2.5rem 4rem}}
+.src h3{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin:0 0 .9rem}
+.src + .src{margin-top:2.5rem}
+.src ol{list-style:none;padding:0;margin:0;counter-reset:s}
+.src li{counter-increment:s;display:grid;grid-template-columns:2rem minmax(0,1fr);padding:.6rem 0;border-top:1px solid var(--rule);font-family:var(--sans);font-size:.9rem;line-height:1.4}
+.src li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:.72rem;color:var(--ink-3);padding-top:.15rem}
+.src li a{text-decoration:none}
+.src li a:hover{text-decoration:underline}
+.src li small{display:block;color:var(--ink-3);font-family:var(--mono);font-size:.7rem;margin-top:.2rem;word-break:break-all}
+
+footer{border-top:1px solid var(--rule);margin-top:4rem;padding:2rem clamp(1rem,4vw,3rem) 3rem;font-family:var(--sans);font-size:.8rem;color:var(--ink-3);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer a{color:var(--ink-2)}
+
+@media print{
+  .progress,.toc,.theme-btn,.filters{display:none}
+  .stats{background:none;color:var(--ink);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  details.latin{display:block}
+  body{font-size:11pt}
+}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<header class="mast">
+  <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button>
+</header>
+
+<div class="hero">
+  <p class="eyebrow">The Unbroken Chain · Chapter 8</p>
+  <h1>Chapter 8, <em>quote by quote</em></h1>
+  <p class="dek">Thirty-three quotations from Robert Breaker’s <i>The Unbroken Chain of Salvation by Faith in The Blood</i>, from Augustine to Ian Paisley, checked against the sources they are credited to.</p>
+  <div class="meta">
+    <div><strong>Book</strong>The Unbroken Chain of Salvation by Faith in The Blood</div>
+    <div><strong>Released</strong>December 22, 2025</div>
+    <div><strong>Edition checked</strong>Kindle, October 2, 2026</div>
+  </div>
+</div>
+
+<div class="stats" aria-label="Verdicts">
+  <div class="stats-inner">
+    <p class="stat-label">Verdicts · 33 quotations reviewed</p>
+    <div class="tiles">
+      <div class="tile c-fake"><b>26</b><span>Fake</span></div>
+      <div class="tile c-un"><b>7</b><span>Only source is Robert Breaker</span></div>
+    </div>
+    <div class="bar" role="img" aria-label="26 fake, 7 whose only source is Robert Breaker">
+      <i class="c-fake" style="flex:26"></i><i class="c-un" style="flex:7"></i>
+    </div>
+    <p class="stats-note">Not one of the 33 quotations reviewed here could be confirmed in its cited source.</p>
+  </div>
+</div>
+
+<main class="layout">
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#method">How to read this</a></li>
+      <li><a href="#era-1">Church Fathers &amp; early medieval<small>354 to 800</small></a></li>
+      <li><a href="#era-2">High medieval<small>820 to 1050</small></a></li>
+      <li><a href="#era-3">Dissenters &amp; martyrs<small>1140 to 1568</small></a></li>
+      <li><a href="#era-4">Revivalists &amp; modern preachers<small>1734 to 1977</small></a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </nav>
+
+  <article class="body">
+    <section id="method" class="prose">
+      <span class="sec-num">00</span>
+      <h2>How to read this</h2>
+      <p class="lede">Each entry gives the quotation exactly as it appears in the book, the citation the book gives for it, and what the cited source actually contains. Where the real text is available, it is reproduced so readers can compare for themselves.</p>
+      <p>A quotation in quotation marks is a claim that those are the words in the source. That is the standard each entry is held to.</p>
+      <div class="key">
+        <div style="--c:var(--blood)"><strong>Fake</strong><p>The words are not in the cited source, the cited source does not exist, or the historical record says something different.</p></div>
+        <div style="--c:var(--unknown)"><strong>Only source is Robert Breaker</strong><p>The quote appears nowhere except Breaker’s book. The source it is credited to (an archive, a broadcast, an unpublished sermon) is not public, so it cannot be checked directly.</p></div>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <div class="filters" role="toolbar" aria-label="Search and filter quotes">
+        <label class="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="qSearch" placeholder="Search names, quotes, citations or findings" aria-label="Search quotes" autocomplete="off">
+          <button type="button" class="search-clear" id="qClear" hidden>Clear</button>
+        </label>
+        <span>Show</span>
+        <button class="chip" data-f="all" aria-pressed="true">All <em>33</em></button>
+        <button class="chip" data-f="fake" style="--c:var(--blood)" aria-pressed="false">Fake <em>26</em></button>
+        <button class="chip" data-f="un" style="--c:var(--unknown)" aria-pressed="false">Only source is Breaker <em>7</em></button>
+        <span class="result-count" id="qCount" aria-live="polite"></span>
+      </div>
+      <p class="no-results" id="noResults" hidden>No quotes match your search.</p>
+
+      <!-- ===================== ERA 1 ===================== -->
+      <div class="era" id="era-1"><h3>Church Fathers &amp; early medieval</h3><small>354 to 800</small><i></i></div>
+
+      <article class="q" data-v="fake" id="q1">
+        <div class="q-num">01</div>
+        <div>
+          <div class="q-head"><h4>Augustine of Hippo</h4><span class="when">354 to 430 A.D.</span><span class="v v-fake">Fake · Misattributed</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>All my hope, and the certainty of my faith, is in the precious blood of Christ, which was shed for us and for our salvation.</q>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>This is an incorrectly attributed quote. The misinformation stems from Alphonsus Liguori, a Catholic Saint and Italian Bishop of the Roman Catholic Church, who said in his <i>Prayer: The Great Means of Salvation and of Perfection</i>:</p>
+          </div>
+          <div class="actual"><span class="lbl">What Liguori actually wrote</span>
+            <blockquote>“But St. Augustine had no doubt when he said, ‘All my hope, and the certainty of my faith, is in the Precious Blood of Christ, Which was shed for us and for our salvation.’ Thus the Saint placed all his hope in the Blood of Jesus Christ; because the faith assured him that Christ died for all.”</blockquote>
+            <cite>Alphonsus Liguori, Prayer: The Great Means of Salvation and of Perfection</cite>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q2">
+        <div class="q-num">02</div>
+        <div>
+          <div class="q-head"><h4>Gennadius of Massilia</h4><span class="when">c. 495 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Christ died once for all. The faith which saves is faith in His blood. This cannot be earned, nor bought, nor repeated in the Mass, but only believed and received.</q>
+            <span class="cite"><b>Cited as</b> De Ecclesiasticis Dogmatibus, Chapter 45.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>Chapter 45 of <i>De Ecclesiasticis Dogmatibus</i> is about free will and grace. It does not say what Breaker says it does.</p>
+          </div>
+          <div class="actual"><span class="lbl">What Chapter 45 actually says</span>
+            <blockquote>If anyone contends that some can come to the grace of baptism by mercy, and others by free will, which, in all who are born of the first man’s transgression, is shown to be vitiated, he is proved to be alien to the right faith. For he does not assert that the free will of all was weakened by the sin of the first man; or at least he thinks it so impaired that some can nevertheless, without the revelation of God, by their own efforts seek out the ministry of eternal salvation. How contrary this is, the Lord himself proves (John 6:44), who testifies that not some, but no one can come to him, unless the Father has drawn him. As he also says to Peter: “Blessed are you, Simon son of Jonah, for this was not revealed to you by flesh and blood, but by my Father in heaven” (Matthew 16:17). And the Apostle: No one can say, “Lord Jesus,” except in the Holy Spirit (1 Cor. 12:3).</blockquote>
+            <cite>Gennadius, De Ecclesiasticis Dogmatibus 45 (English translation)</cite>
+          </div>
+          <details class="latin"><summary>Original Latin</summary><div class="inner">
+            <p class="la">Si quis alios per misericordiam, alios vero per liberum arbitrium, quod in omnibus qui de praevaricatione primi hominis nati sunt constat esse vitiatum, ad gratiam baptismi posse venire contendit, a recta fide probatur alienus. Ille enim non omnium liberum arbitrium per peccatum primi hominis asserit infirmatum; aut certe ita laesum putat, ut tamen quidam valeant sine revelatione Dei ministerium salutis aeternae per semetipsos posse conquirere. Quod quam sit contrarium ipse Dominus probat (Joan. VI, 44), qui non aliquos, sed neminem ad se posse venire testatur, nisi quem Pater attraxerit. Sicut et Petro dicit: Beatus es, Simon Bar Jona, quia caro et sanguis non revelavit tibi, sed Pater meus, qui in coelis est (Matth. XVI, 17). Et Apostolus: Nemo potest dicere Dominus Jesus, nisi in Spiritu sancto (I Cor. XII, 3).</p>
+          </div></details>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q3">
+        <div class="q-num">03</div>
+        <div>
+          <div class="q-head"><h4>Cassiodorus</h4><span class="when">Italy, c. 510 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>We are reconciled to God by the blood of His Son, not by merit. Let the sinner trust in that blood, and not despair. It is not fasting or relics, but faith in the blood which saves.</q>
+            <span class="cite"><b>Cited as</b> Explanation of the Psalms, Vol. 1, Psalm 51.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p><i>Cassiodorus: Explanation of the Psalms</i> Vol. 1 only contains Psalms 1 to 50 (which is actually 51). Volume 2 contains 51 (which actually starts with 52) to 100, and Volume 3 contains 101 to 150. The Vulgate and Septuagint use a numbering system which is offset one number from the Hebrew Masoretic ordering.</p>
+            <p>Giving this the benefit of the doubt, let’s assume the quote only rejects the Catholic ordering. His commentary in Volume 1 on the book’s Psalm 50 (which is actually 51) contains no such passage.</p>
+            <p>And assume for the sake of argument it is actually the Catholic ordering, and it’s the Hebrew Masoretic Psalm 52:</p>
+            <ol>
+              <li>You can more or less see every page describing his commentary on Psalm 52, and it says nothing of the kind.</li>
+              <li>Why would he mention the blood in a verse about God’s judgment on Doeg the Edomite?</li>
+            </ol>
+            <p>Cassiodorus is used as one of the first people to mention the Catholic relic of the crown of thorns, making it highly illogical he would be against relics.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q4">
+        <div class="q-num">04</div>
+        <div>
+          <div class="q-head"><h4>Gregory the Great</h4><span class="when">c. 600 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Christ gave His blood for us. In that blood is remission, and by that blood we are made clean, if we believe. Not the ceremonies of men, but faith in His sacrifice is the true approach to God.</q>
+            <span class="cite"><b>Cited as</b> Homilies on the Gospels, Book 1, Homily 21.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>This line does not exist in the homily.</p>
+            <p>Gregory the Great is Pope Gregory I.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q5">
+        <div class="q-num">05</div>
+        <div>
+          <div class="q-head"><h4>Isidore of Seville</h4><span class="when">Spain, c. 615 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>The blood of Christ is the price of redemption. Faith in that blood cleanses from sin, justifies the sinner, and delivers from judgment. It is not by our efforts but by believing in His offering.</q>
+            <span class="cite"><b>Cited as</b> Sententiae, Book 2, Chapter 16.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>Cannot be found in the <i>Sententiae</i>.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q6">
+        <div class="q-num">06</div>
+        <div>
+          <div class="q-head"><h4>Bede the Venerable</h4><span class="when">England, c. 730 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>The blood of Christ cries out for mercy… And those who believe in that blood shall find peace with God. The cross is the altar, and the faithful are justified through trust in the sacrifice made there.</q>
+            <span class="cite"><b>Cited as</b> Commentary on 1 Pet. 1:2.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>Bede’s actual commentary on 1 Peter 1:2 says nothing like this. It speaks of election, sanctification by the Spirit, and sprinkling with the blood after the pattern of the Passover lamb.</p></div>
+          <div class="actual"><span class="lbl">What Bede actually wrote</span>
+            <blockquote>According to the foreknowledge of God the Father, etc. These verses are joined to what he had said before: “to the elect strangers.” For they were elect according to the foreknowledge of God the Father. Hence the apostle says: ‘Whom he foreknew he also predestined to be conformed to the image of his Son.’ And elsewhere: As he chose us in him before the foundation of the world. The elect, however, were chosen for this purpose, that through the gift of the Holy Spirit they should be sanctified, cleansed from all sins, so that they, who had perished through the disobedience of the first-formed man, might begin to obey the Lord Jesus Christ, and that, sprinkled with his blood, they might avoid the power of Satan, just as Israel, by the blood of the lamb, cast off the dominion of the Egyptians. He speaks of sprinkling, however, in the manner of the Old Testament, where those things that were to be sanctified were accustomed to be sprinkled with the blood of sacrifices. Moreover, the Lord himself speaks plainly of it: ‘Unless you have eaten…’</blockquote>
+            <cite>Bede, Super Epistolas Catholicas, on 1 Peter 1:2 (translated with DeepL, lightly corrected)</cite>
+          </div>
+          <details class="latin"><summary>Original Latin</summary><div class="inner">
+            <p class="la">Secundum praescientiam Dei Patris, etc. Adhaerent hi versiculi ad hoc quod praedixerat, Electis advenis. Electi namque erant secundum praescientiam Dei Patris. Unde et apostolus ait: Quos praescivit et praedestinavit conformes fieri imaginis Filii sui. Et alibi: Sicut elegit nos in ipso ante mundi constitutionem. Electi autem erant ad hoc, ut per donationem Spiritus sancti sanctificarentur, emundati ab omnibus peccatis, ut obedire inciperent Domino Jesu Christo, qui per inobedientiam protoplasti perierant, ut aspersi sanguine ejus potestatem Satanae vitarent, sicut Israel per agni sanguinem Aegyptorum dominatum declinavit. Aspersionem autem dicit more Scripturae veteris, ubi quae sanctificanda erant, sanguine hostiarum solebant aspergi. Caeterum ipse Dominus dicit manifeste de eo: Nisi manducaveritis…</p>
+          </div></details>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q7">
+        <div class="q-num">07</div>
+        <div>
+          <div class="q-head"><h4>Alcuin of York</h4><span class="when">England, c. 790 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Let no man trust in works or pilgrimages for salvation. Let him believe in the crucified One, whose blood is the only ransom. Blessed is the man who dies believing in that blood.</q>
+            <span class="cite"><b>Cited as</b> Epistles, Letter 23 to Osbert.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This does not exist.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q8">
+        <div class="q-num">08</div>
+        <div>
+          <div class="q-head"><h4>The Paulicians</h4><span class="when">Eastern Europe, 7th to 11th centuries</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>We are justified not by works, nor by prayers to saints, nor by images, but by the blood of Christ shed once for all. And by faith we receive that blood, and are made whole.</q>
+            <span class="cite"><b>Cited as</b> Quoted in Armenian chroniclers, Key of Truth, translated by F.C. Conybeare, 1898.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>Conybeare’s 1898 English translation of <i>The Key of Truth</i> was fully searched through. The sentence is not in it, and neither are its distinctive phrases: “justified not by works,” “prayers to saints,” “shed once for all,” “receive that blood” and “made whole” do not appear.</p>
+            <ol>
+              <li>The citation is wrong. <i>The Key of Truth</i> is not a chronicle. It is an anonymous Paulician manual, which Conybeare published as <i>A Manual of the Paulician Church of Armenia</i>. The “Armenian chroniclers” are the medieval churchmen Conybeare quotes in his introduction and appendices, and most of them were hostile to the Paulicians.</li>
+              <li>The real text teaches something different. It names four things that save, and baptism and the body and blood of the Lord’s Supper are two of them.</li>
+            </ol>
+          </div>
+          <div class="actual"><span class="lbl">What The Key of Truth actually says</span>
+            <blockquote>“Four are they which save man. First, Repentance. Second, Right Faith. Third, Holy Baptism.… And fourth, the holy precious body and blood of our Lord Jesus Christ.”</blockquote>
+            <cite>The Key of Truth, trans. F.C. Conybeare (Oxford, 1898), Catechism</cite>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== ERA 2 ===================== -->
+      <div class="era" id="era-2"><h3>High medieval</h3><small>820 to 1050</small><i></i></div>
+
+      <article class="q" data-v="fake" id="q9">
+        <div class="q-num">09</div>
+        <div>
+          <div class="q-head"><h4>Theodulf of Orléans</h4><span class="when">France, c. 820 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>The Lord’s body was given, His blood was shed, and faith in this alone cleanses the soul. Not the offerings of the Mass, but the believing heart that lays hold of the blood.</q>
+            <span class="cite"><b>Cited as</b> Homilies, Manuscript Vaticanus 105.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This citation is physically impossible. There is no such Manuscript Vaticanus 105.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q10">
+        <div class="q-num">10</div>
+        <div>
+          <div class="q-head"><h4>Ælfric of Eynsham</h4><span class="when">England, c. 995 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Christ’s sacrifice is not to be repeated. His blood was shed once for all, and we believe that we are redeemed by that offering. It is faith, not bread, that makes us clean.</q>
+            <span class="cite"><b>Cited as</b> Sermon on the Easter Sacrifice, Old English Homily Series.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This passage does not exist in Volume 1 or 2 of <i>The Homilies of the Anglo-Saxon Church</i> by Ælfric.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q11">
+        <div class="q-num">11</div>
+        <div>
+          <div class="q-head"><h4>Heriger of Lobbes</h4><span class="when">Belgium, c. 1000 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>It is the heart that believes, not the hand that holds. The blood of the Lord is applied by faith, not by the senses, and the altar is not in the church, but in the soul.</q>
+            <span class="cite"><b>Cited as</b> Commentary on the Gospels, Homily for Hebrews 9.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This book does not exist, and the citation contradicts itself: why would it be a commentary on the gospels, yet be a homily for Hebrews?</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q12">
+        <div class="q-num">12</div>
+        <div>
+          <div class="q-head"><h4>Fulbert of Chartres</h4><span class="when">France, c. 1025 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Jesus Christ is the Lamb, and His blood is the cleansing for our sins. We approach not by ritual alone, but by faith in His wounds, for in them is peace and reconciliation.</q>
+            <span class="cite"><b>Cited as</b> Sermon in Passione Domini.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>He has 9 surviving sermons, and this is not one of them. He also taught the real presence.</p></div>
+          <div class="actual"><span class="lbl">What Fulbert of Chartres actually taught</span>
+            <blockquote>“But Fulbert adhered to the traditional orthodoxy, and expressed himself against innovations, in letters to his metropolitan, Leutberich, archbishop of Sens. He regarded the real presence as an object of faith and adoration rather than of curious speculation, but thought that it is not more difficult to believe in a transformation of substance by Divine power than in the creation of substance. He was a zealous worshipper of the saints, especially of the Virgin Mary, and one of the first who celebrated the festival of her Nativity.”</blockquote>
+            <cite>Philip Schaff, History of the Christian Church, Vol. 4</cite>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q13">
+        <div class="q-num">13</div>
+        <div>
+          <div class="q-head"><h4>Berengar of Tours</h4><span class="when">c. 1050 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>The bread remains bread, and the wine remains wine; the body of Christ is not broken anew. We are not saved by the Mass, but by the blood of Christ shed once for all, and believed upon by faith.</q>
+            <span class="cite"><b>Cited as</b> Quoted in Anti-Berengarian Documents, Roman opposition archives. The book adds: “Berengar was condemned for rejecting transubstantiation and affirming salvation through faith in Christ alone.”</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This quote does not exist. These archives do not exist. He did deny transubstantiation, but I cannot find anything on sola fide.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q14">
+        <div class="q-num">14</div>
+        <div>
+          <div class="q-head"><h4>The Council of Vercelli</h4><span class="when">1050 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>He holds that the bread remains bread and that faith in Christ’s death and blood alone is sufficient to justify.</q>
+            <span class="cite"><b>Cited as</b> Council Records, Vercelli Synod, quoted in Mansi’s Sacrorum Conciliorum Nova et Amplissima Collectio, Vol. 19. The book introduces it: “In condemning Berengar, they inadvertently recorded his faith.”</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This does not exist in Mansi, Vol. 19.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q15">
+        <div class="q-num">15</div>
+        <div>
+          <div class="q-head"><h4>The Bogomils</h4><span class="when">Balkans, 10th to 13th centuries</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>We reject the Mass and the cross as idols, but we believe in the death of Jesus Christ and in His blood shed for sinners. The true altar is the heart that believes in the Lamb.</q>
+            <span class="cite"><b>Cited as</b> The Secret Book of the Bogomils, quoted in Emmanuel d’Hooghvorst’s analysis, 1991.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>“Baron Emmanuel van der Linden d’Hooghvorst (1914–1999) was a Belgian writer, spagyric philosopher and alchemist.”</p>
+            <ol>
+              <li>d’Hooghvorst did not publish any books in 1991, and he believed in Kabbalism. Why would he write on the Bogomils?</li>
+              <li>The citation is illogical on further analysis: why would you quote him instead of just quoting the primary source?</li>
+              <li>The Secret Book of the Bogomils does not have this line.</li>
+            </ol>
+          </div>
+          <div class="aside"><b>Note</b>The person who fact checked Chapter 8 (I have since de-associated from him) was alarmed by the Bogomil entry, and he thought Milena Varzonovtseva wrote <i>The Secret Book of the Bogomils</i>. She did not. Her book is about something else entirely, and it would not be applicable to what Robert Breaker is saying: “This book explores the widely assumed, but rarely investigated connection between two medieval documents: the eschatological pseudepigraphon 2 Enoch and the main text of the Bogomils, their Secret Book.”</div>
+        </div>
+      </article>
+
+      <!-- ===================== ERA 3 ===================== -->
+      <div class="era" id="era-3"><h3>Dissenters &amp; martyrs</h3><small>1140 to 1568</small><i></i></div>
+
+      <article class="q" data-v="fake" id="q16">
+        <div class="q-num">16</div>
+        <div>
+          <div class="q-head"><h4>Peter de Bruys</h4><span class="when">Preacher, burned at the stake, c. 1140</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Christ’s sacrifice upon the cross is alone sufficient for the salvation of believers; and that sacrifice is not repeated in the Mass, nor applied through priests, but is received by faith in the blood.</q>
+            <span class="cite"><b>Cited as</b> Recorded by Peter of Cluny, Contra Petrobrusianos, 1145.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>I’ve looked at <i>Contra Petrobrusianos</i>. It doesn’t say this.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q17">
+        <div class="q-num">17</div>
+        <div>
+          <div class="q-head"><h4>The Waldensians</h4><span class="when">Public testimony, 1165 A.D.</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>We do not believe that the body of Christ is made in the Mass; we believe that the bread remains bread and is only a memorial. We believe that it is the blood of Christ which cleanses us, by faith.</q>
+            <span class="cite"><b>Cited as</b> Waldensian Statement at the Synod of Lombardy, 1165 A.D.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This line does not exist. Compare the genuine early Waldensian documents listed in the Sources, including the <i>Letter from the Poor Lombards to the Poor of Lyons</i> (1218).</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q18">
+        <div class="q-num">18</div>
+        <div>
+          <div class="q-head"><h4>The Albigenses</h4><span class="when">Southern France, 12th to 13th centuries</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Christ died once, and that death is the only redemption for sin. We do not believe that the priest creates Christ in the Mass. We believe we are forgiven through faith in His blood.</q>
+            <span class="cite"><b>Cited as</b> Doctrinal summary cited by Inquisitor Bernard Gui, Practica Inquisitionis Heretice Pravitatis, 1323.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This quote does not exist in the book, and the book was written in 1321, not 1323.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q19">
+        <div class="q-num">19</div>
+        <div>
+          <div class="q-head"><h4>The Lollards</h4><span class="when">England, 14th to 15th centuries</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>It is not the priest’s words that save us, but the blood of Christ. We believe that every faithful man is a priest by faith, and he is justified not by shrift but by trust in the blood of Jesus.</q>
+            <span class="cite"><b>Cited as</b> Lollard Articles of Faith, Trial Records, London, 1410.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This does not exist, on several levels:</p>
+            <ol>
+              <li>1410 is when John Badby was executed, so why would it be the group’s articles of faith when the trial was of a single person?</li>
+              <li>It cannot be found.</li>
+            </ol>
+            <p>The Lollards’ actual public statement of belief is <i>The Twelve Conclusions of the Lollards</i>, presented to Parliament in 1395, and nothing like this appears in it.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q20">
+        <div class="q-num">20</div>
+        <div>
+          <div class="q-head"><h4>Francisco de San Román</h4><span class="when">Protestant martyr in Spain, 1540</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>I believe only in the sacrifice of Jesus Christ, once offered on the cross, and not in the Mass. I believe in salvation through faith in His blood alone. For this I am content to die.</q>
+            <span class="cite"><b>Cited as</b> Final testimony before being burned alive at the stake.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>This quote does not exist.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q21">
+        <div class="q-num">21</div>
+        <div>
+          <div class="q-head"><h4>George Wishart</h4><span class="when">Scottish Reformer, burned 1546</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>There is no salvation in the Pope. I believe salvation is in Christ, and in His blood alone. I fear not death, for I am washed in the blood of the Lamb.</q>
+            <span class="cite"><b>Cited as</b> Final declaration before execution by Roman authorities. From Reformation Martyrs of Scotland.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>There is no book called <i>Reformation Martyrs of Scotland</i>.</p>
+            <p>Wishart’s recorded words at the stake are nothing like this. He never mentions the Pope, “blood alone,” or being “washed in the blood of the Lamb.”</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q22">
+        <div class="q-num">22</div>
+        <div>
+          <div class="q-head"><h4>Antonio Herrezuelo</h4><span class="when">Martyr of Valladolid, 1559</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>I have committed no crime, but have trusted in Christ alone for salvation. Let the flames bear witness that I reject the Mass and all its idols, and that I trust in the blood of Christ alone.</q>
+            <span class="cite"><b>Cited as</b> Eyewitness account of his final words as he was burned alive. Historical source: “Spanish Protestant Martyrs,” compiled by Leonard Verduin.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <ol>
+              <li>The book does not exist. Leonard Verduin never wrote a book called <i>Spanish Protestant Martyrs</i>.</li>
+              <li>Herrezuelo is recorded as having been gagged the whole time he burned. A man who was gagged could not have given these final words.</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q23">
+        <div class="q-num">23</div>
+        <div>
+          <div class="q-head"><h4>Leonor de Cisneros</h4><span class="when">Burned 1568</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>I denied the Lord once, but I will not deny Him again. Christ died for me, and I am saved by His blood, not by the Mass, not by confession to a priest. Let them kill me.</q>
+            <span class="cite"><b>Cited as</b> Statement upon voluntarily returning to the Inquisition for martyrdom.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>The book gives no source, and no account of her life records any statement by her, at her trial or at the stake. The only place these words appear is Breaker’s book.</p>
+            <p>Leonor, Herrezuelo’s wife, recanted in 1559 and was sentenced to three years’ imprisonment in a Benedictine monastery. After her husband’s death she returned to her Protestant faith and openly spoke about it among the other prisoners. She was condemned as a relapsed heretic and burned at Valladolid on September 26, 1568. So she did not walk back into the Inquisition from outside, as the book’s framing suggests.</p>
+            <p>Her story is well documented, and nowhere in it does she say anything like this. A 16th-century martyr’s words that first appear in a book published in 2025, with no source, have no historical basis.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== ERA 4 ===================== -->
+      <div class="era" id="era-4"><h3>Revivalists &amp; modern preachers</h3><small>1734 to 1977</small><i></i></div>
+
+      <article class="q" data-v="fake" id="q24">
+        <div class="q-num">24</div>
+        <div>
+          <div class="q-head"><h4>Jonathan Edwards</h4><span class="when">1703 to 1758, New England</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>It is by faith in the blood of Christ that sinners are justified. The blood is the price, the ransom, the satisfaction. And faith is the hand that receives the atonement. The blood does not save automatically; it must be applied. And that is the office of faith: to lay hold of the blood and plead it before the throne.</q>
+            <span class="cite"><b>Cited as</b> Justification by Faith Alone, sermon preached in 1734.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <p>The full text of <i>Justification by Faith Alone</i> (dated November 1734) was checked word for word. None of these sentences appear in it. The phrases “lay hold of the blood,” “plead it before the throne,” and “does not save automatically” are absent, and the word “ransom” does not appear anywhere in the discourse.</p>
+            <p>The nearest real line is about faith in general, not about blood: faith is “the instrument, or as it were the hand, by which he that has purchased justification is apprehended and accepted.”</p>
+          </div>
+          <div class="actual"><span class="lbl">What Edwards actually taught about the blood</span>
+            <blockquote>“Therefore the Scripture seems everywhere to attribute the whole of salvation to the blood of Christ. This precious blood is as much the main price by which heaven is purchased, as it is the main price by which we are redeemed from hell.”</blockquote>
+            <cite>Jonathan Edwards, Justification by Faith Alone (1734/1738)</cite>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q25">
+        <div class="q-num">25</div>
+        <div>
+          <div class="q-head"><h4>Charles H. Spurgeon</h4><span class="when">1834 to 1892</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>If our sins outnumbered the number of the hairs on our head; yet the merits of the death of Jesus Christ are infinitely greater, and faith in His blood shall make them white as snow.</q>
+            <span class="cite"><b>Cited as</b> No citation given.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>The book gives no source, and searches for the line, including “faith in His blood shall make them white as snow,” return nothing in Spurgeon’s sermons or anywhere else.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q26">
+        <div class="q-num">26</div>
+        <div>
+          <div class="q-head"><h4>Billy Sunday</h4><span class="when">1862 to 1935, evangelist</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>When Jesus Christ shed His blood on the cross, that was the payment for sin. But it won’t do you any good until you believe in it. The devil believes Jesus died, but he’s not saved. You have to have faith in that blood. If you trust that, God will save you. If you don’t, you’re lost forever.</q>
+            <span class="cite"><b>Cited as</b> Quoted in The Evangelist’s Sermons, Billy Sunday, Fleming H. Revell Company, 1914, p. 193.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <ol>
+              <li>No book called <i>The Evangelist’s Sermons</i> exists.</li>
+              <li>The only Billy Sunday book Revell published in 1914 is Elijah P. Brown’s <i>The Real Billy Sunday</i>, a biography. Its page 193 is a newspaper report of Sunday’s South Bend revival (“Six thousand three hundred and ninety-eight persons have taken Billy Sunday by the hand”). It says nothing about the blood.</li>            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="fake" id="q27">
+        <div class="q-num">27</div>
+        <div>
+          <div class="q-head"><h4>E.J. Pace</h4><span class="when">1879 to 1946</span><span class="v v-fake">Fake</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>What can wash away my sin? Nothing but the blood of Jesus. And how is that blood applied? Through faith! The gospel is not that Jesus lived, but that He died and shed His blood, and we must trust that blood to be cleansed. Romans 3:25 settles the issue. Without faith in the blood, you are still in your sins.</q>
+            <span class="cite"><b>Cited as</b> From an unpublished sermon illustration in The Fundamentals, Vol. 3, Testimony Publishing, 1910. The book describes him as a “Baptist Illustrator, Bible Teacher and Theologian.”</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span>
+            <ol>
+              <li>The citation contradicts itself. A sermon illustration cannot be both “unpublished” and printed in <i>The Fundamentals</i>.</li>
+              <li>Pace did not write for <i>The Fundamentals</i>. Volume 3 (1910) contains essays by Gray, Moorehead, Speer, Mullins, Whitelaw, Reeve and Studd.</li>
+              <li>In 1910 Pace was a missionary in the Philippines (1905 to 1915). His cartoons first appeared in <i>The Sunday School Times</i> on December 2, 1916.</li>
+              <li>He was not a Baptist. He was an ordained United Brethren minister.</li>
+              <li>The opening lines are Robert Lowry’s hymn “Nothing But the Blood.”</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q28">
+        <div class="q-num">28</div>
+        <div>
+          <div class="q-head"><h4>Bob Jones Sr.</h4><span class="when">1883 to 1968</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>I believe in the old-time religion, the kind that preaches faith in the blood. I don’t care what the modernists say: God demands blood. And you better not trust your works, your feelings, your religion; you better trust the blood! That’s what Romans 3:25 says. You’ve got to have faith in that blood.</q>
+            <span class="cite"><b>Cited as</b> Sermon transcript, “The Blood Still Saves,” Bob Jones Sr., 1943 Chapel Message, Bob Jones University Archives.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>No sermon by this title can be found, and searches for the quote’s wording return nothing.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q29">
+        <div class="q-num">29</div>
+        <div>
+          <div class="q-head"><h4>R.G. Lee</h4><span class="when">1886 to 1978, Baptist pastor</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>Without the shedding of blood there is no remission. But without faith in that blood, there is no application of it. Romans 3:25 says it: faith in His blood. The blood of Christ is powerful enough to save the worst sinner, but it must be believed on. You can’t ride the coattails of religion. You’ve got to trust the blood for yourself.</q>
+            <span class="cite"><b>Cited as</b> Sermon: “The Blood of Christ,” R.G. Lee, Bellevue Baptist Archives, preached 1951.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>Neither this sermon nor this quotation can be found. Searches for its most distinctive line, “You can’t ride the coattails of religion,” return nothing.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q30">
+        <div class="q-num">30</div>
+        <div>
+          <div class="q-head"><h4>B.R. Lakin</h4><span class="when">1901 to 1984, evangelist</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>We are not justified by church membership, good behavior, or a clean past. We are justified by one thing: faith in His blood. When the Lord passed over Egypt, He wasn’t looking for goodness; He was looking for blood. And it had to be applied. So it is now. Jesus shed it, but you must trust it. You must rest your soul in it.</q>
+            <span class="cite"><b>Cited as</b> Sermon: “The Only Way,” B.R. Lakin Crusade, 1955.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>No sermon by this title can be found, and searches for the quote’s wording return nothing. Lakin began full-time evangelism in 1952, so a 1955 crusade is possible.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q31">
+        <div class="q-num">31</div>
+        <div>
+          <div class="q-head"><h4>Carl McIntire</h4><span class="when">1906 to 2002</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>[T]he cross is not just an emblem; it is the altar of blood. And that blood is not a token or symbol. It is the real payment for sin. But hear me now: that payment is not applied unless it is received by faith. Romans 3:25 tells us how: ‘through faith in His blood.’ You can know the facts, believe the stories, and sing the hymns, but if you have not put your personal faith in the shed blood of Jesus Christ, you are lost.</q>
+            <span class="cite"><b>Cited as</b> 20th-Century Reformation Hour Broadcast, Transcript, June 14, 1968.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>The broadcast was real and aired daily, but no transcript for this date can be found, and searches for the quote’s wording return nothing.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q32">
+        <div class="q-num">32</div>
+        <div>
+          <div class="q-head"><h4>W.A. Criswell</h4><span class="when">1909 to 2002, Southern Baptist</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>There is no salvation apart from the blood of Christ, and that blood must be received by faith. You can be religious and be lost. You can be reformed and be lost. But if you put your faith in the blood of Jesus that was shed for your sins, you will be saved, forever! Romans 3:25 tells us it is by ‘faith in His blood.’</q>
+            <span class="cite"><b>Cited as</b> Expository Sermons on Romans, W.A. Criswell, Zondervan, 1961, pp. 87–88.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>No Criswell book on Romans from Zondervan in 1961 can be found, and searches for the quote’s wording return nothing.</p></div>
+        </div>
+      </article>
+
+      <article class="q" data-v="un" id="q33">
+        <div class="q-num">33</div>
+        <div>
+          <div class="q-head"><h4>Ian Paisley</h4><span class="when">1926 to 2014</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
+            <q>There is no other way to God but by the blood, and no other way to appropriate that blood but by faith. This modern gospel of good works and religious excitement is a devil’s gospel. Romans 3:25 is crystal clear: God set forth His Son to be a propitiation through faith in His blood. Don’t trust your tears, your zeal, or your commitment; trust the blood!</q>
+            <span class="cite"><b>Cited as</b> Sermon: “The Blood of the Everlasting Covenant,” Martyrs Memorial Free Presbyterian Church, 1977.</span>
+          </blockquote>
+          <div class="finding"><span class="lbl">Finding</span><p>No Paisley sermon by this title can be found, and searches for the quote’s wording return nothing.</p></div>
+        </div>
+      </article>
+
+      <div class="pattern">
+        <p>Almost every 20th-century quotation in this chapter cites Romans 3:25 by name. Bob Jones Sr., R.G. Lee, Carl McIntire, W.A. Criswell, Ian Paisley and the E.J. Pace entry all do. These men came from different denominations and different decades, yet each one leans on the exact verse Breaker builds his doctrine on.</p>
+        <p>That is what a chatbot produces when it is asked for quotes supporting “faith in His blood.”</p>
+      </div>
+    </section>
+
+    <section id="sources">
+      <span class="sec-num">05</span>
+      <h2>Sources</h2>
+      <div class="src-grid">
+        <div>
+          <div class="src">
+            <h3>Fathers &amp; medieval</h3>
+            <ol>
+              <li><a href="https://archive.org/details/bwb_W9-CTR-079" target="_blank" rel="noopener">Alphonsus Liguori, The Great Means of Salvation and of Perfection<small>archive.org</small></a></li>
+              <li><a href="https://www.ecatholic2000.com/cts/untitled-549.shtml" target="_blank" rel="noopener">Liguori, Prayer: The Great Means (online text)<small>ecatholic2000.com</small></a></li>
+              <li><a href="https://la.wikisource.org/wiki/De_ecclesiasticis_dogmatibus" target="_blank" rel="noopener">Gennadius, De ecclesiasticis dogmatibus<small>la.wikisource.org</small></a></li>
+              <li><a href="https://archive.org/details/cassiodorusexpla0000cass" target="_blank" rel="noopener">Cassiodorus, Explanation of the Psalms, Vol. 1<small>archive.org</small></a></li>
+              <li><a href="https://www.google.com/books/edition/Cassiodorus_Psalms_51_100" target="_blank" rel="noopener">Cassiodorus, Explanation of the Psalms, Vol. 2<small>google.com/books</small></a></li>
+              <li><a href="https://archive.org/details/sanctigregoriim00igoog" target="_blank" rel="noopener">Gregory I, Homilies<small>archive.org</small></a></li>
+              <li><a href="https://la.wikisource.org/wiki/Super_epistolas_Catholicas" target="_blank" rel="noopener">Bede, Super Epistolas Catholicas<small>la.wikisource.org</small></a></li>
+              <li><a href="https://archive.org/details/keyoftruthmanual00paul" target="_blank" rel="noopener">F.C. Conybeare, The Key of Truth (Oxford, 1898), full text<small>archive.org</small></a></li>
+              <li><a href="https://archive.org/details/keyoftruthmanual0000unse" target="_blank" rel="noopener">F.C. Conybeare, The Key of Truth<small>archive.org</small></a></li>
+              <li><a href="https://dn721902.ca.archive.org/0/items/keyoftruthmanual0000unse/keyoftruthmanual0000unse.pdf" target="_blank" rel="noopener">The Key of Truth (PDF)<small>archive.org</small></a></li>
+              <li><a href="https://archive.org/details/homiliesofanglos01aelfuoft/homiliesofanglos01aelfuoft" target="_blank" rel="noopener">The Homilies of the Anglo-Saxon Church (Ælfric), Vol. 1<small>archive.org</small></a></li>
+              <li><a href="https://archive.org/details/homiliesofanglos02aelfuoft/homiliesofanglos02aelfuoft" target="_blank" rel="noopener">The Homilies of the Anglo-Saxon Church (Ælfric), Vol. 2<small>archive.org</small></a></li>
+              <li><a href="https://ccel.org/ccel/schaff/hcc4/hcc4.i.xiv.xxxix.html" target="_blank" rel="noopener">Philip Schaff, History of the Christian Church, Vol. 4<small>ccel.org</small></a></li>
+              <li><a href="https://www.google.com/books/edition/Sacrorum_conciliorum_nova_et_amplissima/1e7quamex9kC?hl=en&amp;gbpv=1&amp;printsec=frontcover" target="_blank" rel="noopener">Mansi, Sacrorum Conciliorum Nova et Amplissima Collectio, Vol. 19<small>google.com/books</small></a></li>
+              <li><a href="https://www.academia.edu/19953981/The_SECRET_BOOK_TAJNATA_KNIGA_of_the_Bogomils_LIBRE_SKORETUE_Codex_Carcashsoniensis_" target="_blank" rel="noopener">The Secret Book of the Bogomils (Codex Carcassonensis)<small>academia.edu</small></a></li>
+            </ol>
+          </div>
+          <div class="src">
+            <h3>Dissenters &amp; martyrs</h3>
+            <ol>
+              <li><a href="https://www.scribd.com/document/319340806/Longer-Confession-and-Extant-Fragments-Final-10-27-2015-85512cff-177c-477c-b46d-A0b9f54cc95e" target="_blank" rel="noopener">The Confessio brevior<small>scribd.com</small></a></li>
+              <li><a href="https://christianhistoryinstitute.org/magazine/article/a-letter-from-the-poor-lombards" target="_blank" rel="noopener">A Letter from the Poor Lombards to the Poor of Lyons (1218)<small>christianhistoryinstitute.org</small></a></li>
+              <li><a href="https://www.google.com/books/edition/Practica_inquisitionis_heretice_pravitat/TAEQAAAAIAAJ?hl=en" target="_blank" rel="noopener">Bernard Gui, Practica Inquisitionis Heretice Pravitatis<small>google.com/books</small></a></li>            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="src">
+            <h3>Revivalists &amp; modern preachers</h3>
+            <ol>
+              <li><a href="https://www.apuritansmind.com/?p=953" target="_blank" rel="noopener">Jonathan Edwards, Justification by Faith Alone (full text)<small>apuritansmind.com</small></a></li>
+              <li><a href="https://commons.ptsem.edu/id/realbillysunday00brow" target="_blank" rel="noopener">Elijah P. Brown, The Real Billy Sunday (Revell, 1914)<small>commons.ptsem.edu</small></a></li>
+              <li><a href="https://archive.org/stream/realbillysunday00brow/realbillysunday00brow_djvu.txt" target="_blank" rel="noopener">The Real Billy Sunday, full text (p. 193)<small>archive.org</small></a></li>
+              <li><a href="https://archive.org/details/fundamentalstest17chic" target="_blank" rel="noopener">The Fundamentals, Vols. 1 to 7 (Testimony Publishing, 1910), including Vol. 3<small>archive.org</small></a></li>            </ol>
+          </div>
+          <div class="src">
+            <h3>Related</h3>
+            <ol>
+              <li><a href="index.html">The Unbroken Chain: A Timeline of the AI-Generated Quotes<small>Main article</small></a></li>
+              <li><a href="https://blogs.crossmap.com/stories/robert-breakers-unbroken-chain-fake-ai-quotes-VjK47MMVtsxwsv-s0ow9N" target="_blank" rel="noopener">Chapter 9 audit<small>blogs.crossmap.com</small></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <span>The Unbroken Chain: Chapter 8, Quote by Quote</span>
+  <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{var t=localStorage.getItem('theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+  function isDark(){
+    var a=root.getAttribute('data-theme');
+    return a ? a==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function label(){btn.textContent=isDark()?'Light mode':'Dark mode';}
+  label();
+  btn.addEventListener('click',function(){
+    var next=isDark()?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+    label();
+  });
+
+  // verdict filter + search
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var cards=[].slice.call(document.querySelectorAll('.q'));
+  var eras=[].slice.call(document.querySelectorAll('.era'));
+  var search=document.getElementById('qSearch'), clearBtn=document.getElementById('qClear');
+  var count=document.getElementById('qCount'), none=document.getElementById('noResults');
+  var quotesTop=document.getElementById('quotes');
+  // fold accents and ligatures so "Aelfric" finds "Ælfric" and "Orleans" finds "Orléans"
+  function norm(s){
+    return s.toLowerCase().replace(/æ/g,'ae').replace(/œ/g,'oe')
+      .normalize('NFD').replace(/[̀-ͯ]/g,'')
+      .replace(/[‘’]/g,"'").replace(/[“”]/g,'"').replace(/\s+/g,' ');
+  }
+  var texts=cards.map(function(q){return norm(q.textContent);});
+  var verdict='all';
+  function apply(){
+    var terms=norm(search.value).trim().split(' ').filter(Boolean), shown=0;
+    cards.forEach(function(q,i){
+      var ok=(verdict==='all'||q.getAttribute('data-v')===verdict) &&
+        terms.every(function(t){return texts[i].indexOf(t)!==-1;});
+      q.hidden=!ok; if(ok) shown++;
+    });
+    eras.forEach(function(e){
+      var n=e.nextElementSibling, any=false;
+      while(n && n.classList.contains('q')){ if(!n.hidden) any=true; n=n.nextElementSibling; }
+      e.style.display=any?'':'none';
+    });
+    var filtered=terms.length||verdict!=='all';
+    count.textContent=filtered?shown+' of '+cards.length:'';
+    none.hidden=shown>0;
+    clearBtn.hidden=!search.value;
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      verdict=c.getAttribute('data-f');
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false');});
+      apply();
+    });
+  });
+  search.addEventListener('input',function(){
+    apply();
+    // keep results in view when the bar is stuck to the top
+    if(quotesTop.getBoundingClientRect().top<0) window.scrollTo(0,quotesTop.getBoundingClientRect().top+window.scrollY);
+  });
+  search.addEventListener('keydown',function(e){ if(e.key==='Escape'){search.value='';apply();} });
+  clearBtn.addEventListener('click',function(){search.value='';apply();search.focus();});
+
+  var bar=document.getElementById('bar');
+  var links=[].slice.call(document.querySelectorAll('.toc a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+    var cur=0;
+    secs.forEach(function(s,i){ if(s && s.offsetParent!==null && s.getBoundingClientRect().top < window.innerHeight*0.3) cur=i; });
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
