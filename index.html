@@ -311,6 +311,14 @@ footer a{color:var(--ink-2)}
 .ticker-eds span::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--blood)}
 .ticker small{color:var(--ink-3);font-size:.75rem}
 
+/* quick facts */
+.facts{border:1px solid var(--ink);border-radius:3px;padding:clamp(1.25rem,3vw,2rem);max-width:48rem;background:var(--card)}
+.facts h2{font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--blood);margin:0 0 1.1rem;max-width:none}
+.facts dl{margin:0;display:grid;grid-template-columns:10rem minmax(0,1fr);gap:.7rem 1.5rem}
+.facts dt{font-family:var(--sans);font-size:.78rem;font-weight:600;color:var(--ink-2);padding-top:.2rem;line-height:1.35}
+.facts dd{margin:0;font-size:1.02rem;line-height:1.5}
+@media (max-width:560px){.facts dl{grid-template-columns:1fr;gap:.1rem}.facts dd{margin-bottom:.7rem}}
+
 /* printing: always light, no controls, everything expanded */
 @media print{
   :root:root:root{
@@ -393,11 +401,11 @@ footer a{color:var(--ink-2)}
   <div class="stats-inner">
     <p class="stat-label">Verdicts · 33 quotations reviewed</p>
     <div class="tiles">
-      <div class="tile c-fake"><b>26</b><span>Fake</span></div>
-      <div class="tile c-un"><b>7</b><span>Only source is Robert Breaker</span></div>
+      <div class="tile c-fake"><b>29</b><span>Fake</span></div>
+      <div class="tile c-un"><b>4</b><span>Only source is Robert Breaker</span></div>
     </div>
-    <div class="bar" role="img" aria-label="26 fake, 7 whose only source is Robert Breaker">
-      <i class="c-fake" style="flex:26"></i><i class="c-un" style="flex:7"></i>
+    <div class="bar" role="img" aria-label="29 fake, 4 whose only source is Robert Breaker">
+      <i class="c-fake" style="flex:29"></i><i class="c-un" style="flex:4"></i>
     </div>
     <p class="stats-note">Not one of the 33 quotations reviewed here could be confirmed in its cited source.</p>
   </div>
@@ -407,6 +415,7 @@ footer a{color:var(--ink-2)}
   <nav class="toc" aria-label="Contents">
     <p>Contents</p>
     <ol>
+      <li><a href="#facts">Quick facts</a></li>
       <li><a href="#method">How to read this</a></li>
       <li><a href="#era-1">Church Fathers &amp; early medieval<small>354 to 800</small></a></li>
       <li><a href="#era-2">High medieval<small>820 to 1050</small></a></li>
@@ -417,6 +426,19 @@ footer a{color:var(--ink-2)}
   </nav>
 
   <article class="body">
+    <section id="facts" class="facts" aria-labelledby="facts-h">
+      <h2 id="facts-h">Quick facts</h2>
+      <dl>
+        <dt>Book</dt><dd><em>The Unbroken Chain of Salvation by Faith in The Blood</em> by Robert Breaker, released December 22, 2025.</dd>
+        <dt>Chapter</dt><dd>Chapter 8, which quotes historical figures from the early church to the 20th century as teaching faith in the blood.</dd>
+        <dt>Reviewed here</dt><dd>33 quotations, from Augustine of Hippo (4th century) to Ian Paisley (1977), each checked against the source the book cites.</dd>
+        <dt>Result</dt><dd>29 are fake: the words are not in the cited source, the source does not exist, or the historical record says otherwise. 4 appear nowhere except Breaker’s book.</dd>
+        <dt>Confirmed in their cited source</dt><dd>0 of 33.</dd>
+        <dt>Example</dt><dd>A quotation credited to Jonathan Edwards’ <em>Justification by Faith Alone</em> (1734) does not appear anywhere in that sermon.</dd>
+        <dt>Pattern</dt><dd>Almost every 20th-century quotation in the chapter cites Romans 3:25 by name, the verse Breaker builds his doctrine on.</dd>
+      </dl>
+    </section>
+
     <section id="method" class="prose">
       <span class="sec-num">00</span>
       <h2>How to read this</h2>
@@ -437,8 +459,8 @@ footer a{color:var(--ink-2)}
         </label>
         <span>Show</span>
         <button class="chip" data-f="all" aria-pressed="true">All <em>33</em></button>
-        <button class="chip" data-f="fake" style="--c:var(--blood)" aria-pressed="false">Fake <em>26</em></button>
-        <button class="chip" data-f="un" style="--c:var(--unknown)" aria-pressed="false">Only source is Breaker <em>7</em></button>
+        <button class="chip" data-f="fake" style="--c:var(--blood)" aria-pressed="false">Fake <em>29</em></button>
+        <button class="chip" data-f="un" style="--c:var(--unknown)" aria-pressed="false">Only source is Breaker <em>4</em></button>
         <span class="result-count" id="qCount" aria-live="polite"></span>
       </div>
       <p class="no-results" id="noResults" hidden>No quotes match your search.</p>
@@ -883,15 +905,15 @@ footer a{color:var(--ink-2)}
         </div>
       </article>
 
-      <article class="q" data-v="un" id="q29">
+      <article class="q" data-v="fake" id="q29">
         <div class="q-num">29</div>
         <div>
-          <div class="q-head"><h4>R.G. Lee</h4><span class="when">1886 to 1978, Baptist pastor</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <div class="q-head"><h4>R.G. Lee</h4><span class="when">1886 to 1978, Baptist pastor</span><span class="v v-fake">Fake</span></div>
           <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
             <q>Without the shedding of blood there is no remission. But without faith in that blood, there is no application of it. Romans 3:25 says it: faith in His blood. The blood of Christ is powerful enough to save the worst sinner, but it must be believed on. You can’t ride the coattails of religion. You’ve got to trust the blood for yourself.</q>
             <span class="cite"><b>Cited as</b> Sermon: “The Blood of Christ,” R.G. Lee, Bellevue Baptist Archives, preached 1951.</span>
           </blockquote>
-          <div class="finding"><span class="lbl">Finding</span><p>Neither this sermon nor this quotation can be found. Searches for its most distinctive line, “You can’t ride the coattails of religion,” return nothing.</p></div>
+          <div class="finding"><span class="lbl">Finding</span><p>A pastor on staff at Bellevue Baptist Church, where Lee preached, checked this sermon in print and did not find the quotation. He added that the wording does not sound like Lee. Searches for its most distinctive line, “You can’t ride the coattails of religion,” return nothing.</p></div>
         </div>
       </article>
 
@@ -907,27 +929,27 @@ footer a{color:var(--ink-2)}
         </div>
       </article>
 
-      <article class="q" data-v="un" id="q31">
+      <article class="q" data-v="fake" id="q31">
         <div class="q-num">31</div>
         <div>
-          <div class="q-head"><h4>Carl McIntire</h4><span class="when">1906 to 2002</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <div class="q-head"><h4>Carl McIntire</h4><span class="when">1906 to 2002</span><span class="v v-fake">Fake</span></div>
           <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
             <q>[T]he cross is not just an emblem; it is the altar of blood. And that blood is not a token or symbol. It is the real payment for sin. But hear me now: that payment is not applied unless it is received by faith. Romans 3:25 tells us how: ‘through faith in His blood.’ You can know the facts, believe the stories, and sing the hymns, but if you have not put your personal faith in the shed blood of Jesus Christ, you are lost.</q>
             <span class="cite"><b>Cited as</b> 20th-Century Reformation Hour Broadcast, Transcript, June 14, 1968.</span>
           </blockquote>
-          <div class="finding"><span class="lbl">Finding</span><p>The broadcast was real and aired daily, but no transcript for this date can be found, and searches for the quote’s wording return nothing.</p></div>
+          <div class="finding"><span class="lbl">Finding</span><p>The broadcast was real and aired daily. The McIntire Collection at Princeton Theological Seminary, which holds his broadcast recordings, could not locate this quote and does not have complete transcriptions, so the “transcript” the book cites cannot be found where McIntire’s records are kept. Searches for the quote’s wording return nothing.</p></div>
         </div>
       </article>
 
-      <article class="q" data-v="un" id="q32">
+      <article class="q" data-v="fake" id="q32">
         <div class="q-num">32</div>
         <div>
-          <div class="q-head"><h4>W.A. Criswell</h4><span class="when">1909 to 2002, Southern Baptist</span><span class="v v-un">Only source is Robert Breaker</span></div>
+          <div class="q-head"><h4>W.A. Criswell</h4><span class="when">1909 to 2002, Southern Baptist</span><span class="v v-fake">Fake</span></div>
           <blockquote class="claimed"><span class="lbl">As quoted in the book</span>
             <q>There is no salvation apart from the blood of Christ, and that blood must be received by faith. You can be religious and be lost. You can be reformed and be lost. But if you put your faith in the blood of Jesus that was shed for your sins, you will be saved, forever! Romans 3:25 tells us it is by ‘faith in His blood.’</q>
             <span class="cite"><b>Cited as</b> Expository Sermons on Romans, W.A. Criswell, Zondervan, 1961, pp. 87–88.</span>
           </blockquote>
-          <div class="finding"><span class="lbl">Finding</span><p>No Criswell book on Romans from Zondervan in 1961 can be found, and searches for the quote’s wording return nothing.</p></div>
+          <div class="finding"><span class="lbl">Finding</span><p>This book does not exist. Zondervan did publish Criswell’s <i>Expository Sermons on Revelation</i> in the 1960s, but no volume on Romans appears in any listing. Criswell preached through Romans at First Baptist Dallas, and searches for the quote’s wording return nothing.</p></div>
         </div>
       </article>
 
